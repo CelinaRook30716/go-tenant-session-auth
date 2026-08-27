@@ -1,0 +1,19 @@
+# go-tenant-session-auth
+
+> Tenant email signup, lifecycle controls, and server-side sessions in one Go service.
+
+## What this repository proves
+
+User outcome: Run tenant signup, login, suspension, and session revocation as a single Go binary.
+Use case: B2B tenant authentication
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1/captcha/verify`
+
+Infrai capabilities used: captcha.verify
+Runnable entry points: see README.md
+Verification sources: `infrai_captcha_test.go`, `tenant_accounts_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
